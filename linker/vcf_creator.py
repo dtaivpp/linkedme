@@ -1,6 +1,11 @@
+from pfp_resize import image_resize
 from pfp_encode import encode
+from pfp_resize import image_resize
+
 def create_vcard(config):
-  encoded_photo = encode("pfp.PNG")
+  pfp_path = image_resize("pfp.PNG")
+
+  encoded_photo = encode(pfp_path)
   return "BEGIN:VCARD\n" \
          "VERSION:4.0\n" \
         f"PHOTO;ENCODING=base64;TYPE=PNG:{encoded_photo}\n" \

@@ -68,6 +68,12 @@ a:link {
   text-decoration-color: var(--backgroundColor);
 }
 
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
 * {
   text-decoration: none;
   box-sizing: border-box;
