@@ -1,0 +1,74 @@
+:root {
+  --primaryColor: white;
+  --backgroundColor: #0089f2;
+  --secondaryBackgroundColor: #18cea4;
+  --textColor: white;
+}
+
+html, body {
+  height: 100%;
+  font-size: large;
+}
+
+body {
+  background-image: linear-gradient(var(--backgroundColor), var(--secondaryBackgroundColor));
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: var(--textColor);
+}
+
+img {
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  object-position: initial;
+  filter: none;
+  text-align: center;
+}
+
+div .pfp {
+  padding: 0px !important;
+  margin-top: 15px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  justify-content: space-evenly;
+}
+
+.container div{
+  padding: 1em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.link {
+  border: 2px solid var(--primaryColor);
+  border-radius: 5px;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container a div:hover {
+  background-color: var(--primaryColor);
+  color: var(--backgroundColor);
+  text-decoration-color: var(--backgroundColor);
+}
+
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+}
