@@ -12,13 +12,13 @@ def create_vcard(config):
           "N:Tippett;David;;;\n" \
           "FN:David Tippett\n" \
           "ORG:Amazon\n" \
-          "TITLE:Developer Advocate - OpenSearch\n" \
+          "TITLE:Search Engineer - GitHub\n" \
           "item1.URL;type=pref:https://linkedin.com/in/david.tippett\n" \
           "item1.X-ABLabel:LinkedIn\n" \
-          "item2.URL:https://blog.tippybits.com\n" \
-          "item2.X-ABLabel:Medium\n" \
-          "item3.URL:https://twitter.com/dtaivpp\n" \
-          "item3.X-ABLabel:Twitter\n" \
+          "item2.URL:https://tippybits.com\n" \
+          "item2.X-ABLabel:Website\n" \
+          "item3.URL:https://bsky.app/profile/taidesu.bsky.social\n" \
+          "item3.X-ABLabel:BlueSky\n" \
           "END:VCARD"
 
 def write_out_vcard(vcard):
