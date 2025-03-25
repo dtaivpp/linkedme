@@ -5,16 +5,19 @@
   --textColor: white;
 }
 
-html, body {
+html {
   height: 100%;
-  font-size: large;
+  background-image: linear-gradient(var(--backgroundColor), var(--secondaryBackgroundColor));
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps the gradient fixed while scrolling */
 }
 
 body {
-  background-image: linear-gradient(var(--backgroundColor), var(--secondaryBackgroundColor));
-  background-repeat: no-repeat;
-  background-size: auto;
+  min-height: 100vh; /* Ensures the body covers the full viewport height */
+  margin: 0; /* Removes default margin */
   color: var(--textColor);
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -32,11 +35,16 @@ div .pfp {
   margin-top: 15px;
 }
 
-h3 {
+h2 {
   margin: 0;
 }
 
+h3 {
+  margin: 0;
+} 
+
 .container {
+  flex: 1; /* Ensures the container takes up available space */
   display: grid;
   justify-content: space-evenly;
 }
@@ -69,9 +77,9 @@ a:link {
 }
 
 footer {
-  position: fixed;
+  position: relative; /* Allows the footer to flow naturally */
   width: 100%;
-  bottom: 0;
+  text-align: center;
 }
 
 * {
